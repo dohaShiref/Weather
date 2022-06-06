@@ -6,7 +6,7 @@ function Dashboard () {
 
   let queryUrl = "https://api.openweathermap.org/data/2.5/onecall?";
   let apiOptions = "units=metric&exclude=minutely,alerts&";
-  let apiKey = "appid=85585ce032692fe7cbba38dd8adf8b7c";
+  let apiKey = "appid=728acc8a6ae452816a4c70781caa6297";
 
 // Icons
 let iconBaseUrl = "http://openweathermap.org/img/wn/";
