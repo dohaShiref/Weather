@@ -4,9 +4,9 @@ import * as d3 from 'd3'
 
 function Dashboard () {
 
-    let queryUrl = "https://api.openweathermap.org/data/2.5/onecall?";
-let apiOptions = "units=metric&exclude=minutely,alerts&";
-let apiKey = "appid=728acc8a6ae452816a4c70781caa6297";
+  let queryUrl = "https://api.openweathermap.org/data/2.5/onecall?";
+  let apiOptions = "units=metric&exclude=minutely,alerts&";
+  let apiKey = "appid=9d3b5e80112cb227f9a7275cdb019508";
 
 // Icons
 let iconBaseUrl = "http://openweathermap.org/img/wn/";
@@ -111,7 +111,7 @@ setData([tomorrowTemp,dATTemp,day3,day4,day5,day6,day7])
                 <div className="card-body p-4">
       
                   <div className="row text-center">
-                    <div className="col-md-7 text-center border-end border-5 border-dark py-4"
+                    <div className="col-md-6 text-center border-end border-5 border-dark py-4"
                        style={{marginTop:'-1.5rem',marginBottom:'-1.5rem'}}>
                       <div className="d-flex justify-content-around mt-3">
                       {/* <Form/> */}
@@ -119,7 +119,7 @@ setData([tomorrowTemp,dATTemp,day3,day4,day5,day6,day7])
                       <div className="d-flex justify-content-around align-items-center py-5 my-4">
                         <p className="fw-bold mb-0" style={{fontSize:'7rem'}}>{temp}°</p>
                         <div className="text-start">
-                          <p className="small">{timeNow}</p>
+                          <p className="h3">Time now {timeNow}</p>
                           <p className="h3 mb-3"> {name}</p>
                           <p className="small mb-0"> {description}</p>
                         </div>
@@ -161,9 +161,9 @@ setData([tomorrowTemp,dATTemp,day3,day4,day5,day6,day7])
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-5 text-end">
-                      <p className="small mt-3 mb-5 pb-5">For a month</p>
-                      <svg className="small mt-3 mb-5 pb-5" ref={svgRef} style={{marginLeft:"-10px"}} ></svg>
+                    <div className="col-md-6 text-end">
+                      <p className="small mt-3 mb-5 pb-5">For a week</p>
+                      <svg className="text-start m-3" ref={svgRef} ></svg>
                     </div>
                   </div>
       
